@@ -1,379 +1,395 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hypolite REOUTAR MBAILASSEM | Portfolio</title>
-  <meta name="description" content="Portfolio de Hypolite REOUTAR MBAILASSEM - Information Management & Humanitarian Data Specialist" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Hypolite REOUTAR MBAILASSEM | Senior Information Management & Data Systems Specialist</title>
+  <meta name="description" content="Portfolio of Hypolite REOUTAR MBAILASSEM, Senior Information Management & Data Systems Specialist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a href="#accueil" class="brand">Hypolite REOUTAR MBAILASSEM</a>
+  <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open navigation">
+    <span></span><span></span><span></span>
+  </button>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="brand">
+        <div class="brand-mark">HR</div>
+        <div>
+          <strong>Hypolite REOUTAR</strong>
+          <span>IM / Data Systems</span>
+        </div>
+      </div>
 
-      <nav class="menu" id="menu" aria-label="Navigation principale">
-        <a href="#apropos">À propos</a>
-        <a href="#expertises">Expertises</a>
-        <a href="#experience">Expérience</a>
-        <a href="#projets">Projets</a>
-        <a href="#competences">Compétences</a>
-        <a href="#formation">Formation</a>
+      <nav class="side-nav">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#organisations">Organisations</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="sidebar-card">
+        <h4>Focus</h4>
+        <p>Information systems, analytical workflows, dashboards, GIS and sensitive data governance.</p>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon">◐</span>
+        <span>Dark mode</span>
+      </button>
     </div>
-  </header>
+  </aside>
 
-  <main>
-    <section class="hero" id="accueil">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Portfolio professionnel</span>
-          <h1>Transformer la <span>donnée complexe</span> en outils clairs pour mieux décider.</h1>
-          <p class="lead">
-            Spécialiste en gestion de l'information, analyse de données humanitaires, cartographie et tableaux de bord,
-            j'accompagne les organisations dans la structuration, l'analyse et la valorisation stratégique de l'information.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
-            <a class="btn btn-secondary" href="#contact">Me contacter</a>
-            <a class="btn btn-secondary" href="cv-hypolite.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+  <div class="page-shell">
+    <main class="main-content">
+      <section class="hero" id="hero">
+        <div class="hero-grid">
+          <div class="hero-text reveal">
+            <span class="eyebrow">Humanitarian Information Management • Data Systems • Analytics</span>
+            <h1>Hypolite REOUTAR MBAILASSEM</h1>
+            <h2>Senior Information Management & Data Systems Specialist</h2>
+            <p class="hero-lead">
+              I design practical information systems, dashboards, analytical workflows and
+              decision-support products for humanitarian coordination, crisis analysis and
+              sensitive data environments.
+            </p>
+            <p class="hero-summary">
+              With more than 10 years of experience across UN agencies and humanitarian
+              coordination settings, I help organisations turn complex data into structured
+              workflows, usable evidence and operational information products for decision-making.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#experience" class="btn btn-primary">Explore Experience</a>
+              <a href="#projects" class="btn btn-secondary">View Projects</a>
+              <a href="Hypolite_REOUTAR_Abuja_NORCAP_CV.docx" class="btn btn-outline">Download CV</a>
+            </div>
+
+            <div class="mini-stats">
+              <div class="mini-stat">
+                <strong>10+</strong>
+                <span>Years of Experience</span>
+              </div>
+              <div class="mini-stat">
+                <strong>7</strong>
+                <span>UN / Humanitarian Organisations</span>
+              </div>
+              <div class="mini-stat">
+                <strong>Multi-country</strong>
+                <span>Crisis & Coordination Contexts</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="photo-card">
+              <img src="assets/images/profile.jpg" alt="Portrait of Hypolite REOUTAR MBAILASSEM" />
+            </div>
+            <div class="info-card">
+              <p><strong>Location:</strong> Kigali, Rwanda</p>
+              <p><strong>Core focus:</strong> IM Systems, Data Governance, Dashboards, GIS</p>
+              <p><strong>Availability:</strong> International deployments and advisory roles</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <aside class="hero-card">
-          <h3>Positionnement</h3>
-          <ul class="hero-list">
-            <li><span class="dot"></span><span>Information Management & Humanitarian Data Specialist</span></li>
-            <li><span class="dot"></span><span>Expertise croisée en genre, analyse, visualisation et coordination</span></li>
-            <li><span class="dot"></span><span>Expérience avec ONU Femmes, OCHA, PNUD, PAM, FAO, HCR et OIM</span></li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Dashboards</span>
-            <span class="tag">SIG</span>
-            <span class="tag">Python</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">KoboToolbox</span>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="container">
-        <div class="kpis">
-          <div class="kpi"><strong>10+</strong><span>années d'expérience</span></div>
-          <div class="kpi"><strong>7</strong><span>agences et environnements internationaux</span></div>
-          <div class="kpi"><strong>Multi</strong><span>contextes humanitaires et développement</span></div>
-          <div class="kpi"><strong>Data</strong><span>analyse, visualisation, SIG et coordination</span></div>
+      <section class="about section" id="about">
+        <div class="section-header reveal">
+          <span class="section-kicker">About</span>
+          <h3>Building systems that make data usable for decisions</h3>
         </div>
-      </div>
-    </section>
-
-    <section id="apropos">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>À propos</h2>
-            <p>Une expertise technique au service de l’analyse, de la coordination et de l’action.</p>
-          </div>
-        </div>
-        <div class="grid-2">
-          <article class="card">
-            <h3>Profil</h3>
+        <div class="content-grid reveal">
+          <div class="content-card content-card-lg">
             <p>
-              Professionnel de la gestion de l'information avec plus de dix ans d'expérience, j'ai évolué dans des contextes
-              humanitaires, de crise et de développement où la qualité des données, la rapidité d'analyse et la lisibilité des
-              produits d'information sont essentielles à la prise de décision.
+              Senior Information Management and Data Systems Specialist working at the intersection
+              of humanitarian analysis, information architecture, visualisation, GIS and sensitive
+              data governance. My experience spans crisis, displacement, inter-agency coordination
+              and decision-support environments across UN agencies and humanitarian mechanisms.
             </p>
             <p>
-              Mon parcours relie collecte de données, contrôle qualité, structuration, visualisation, cartographie, reporting
-              et production d'analyses stratégiques pour des équipes de coordination, des agences des Nations Unies et des partenaires.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Approche</h3>
-            <p>
-              Je privilégie des solutions sobres, robustes et directement utiles aux décideurs. L'objectif n'est pas seulement
-              de produire de l'information, mais de la rendre exploitable, visuelle et suffisamment claire pour orienter l'action.
+              Over the years, I have designed and strengthened information management systems,
+              reporting workflows, dashboards, analytical products and data processes linking
+              collection, validation, harmonisation, analysis and dissemination from operational
+              to strategic levels.
             </p>
             <p>
-              J'accorde également une attention particulière à l'intégration du genre et de l'inclusion dans les systèmes
-              d'information, afin de renforcer la pertinence et l'équité des réponses humanitaires.
+              My approach combines pragmatism, data quality, confidentiality, usability and
+              sustainability to build solutions that teams can adopt quickly and use effectively.
             </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="expertises">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Expertises clés</h2>
-            <p>Des compétences structurées autour de la donnée, de la visualisation et de la coordination humanitaire.</p>
+          </div>
+          <div class="content-card">
+            <h4>What I Deliver</h4>
+            <ul class="check-list">
+              <li>Structured data collection and reporting systems</li>
+              <li>Validation, harmonisation and quality workflows</li>
+              <li>Dashboards, maps and analytical products</li>
+              <li>4W / 5W coordination tools</li>
+              <li>SOPs, documentation and handover support</li>
+              <li>Capacity strengthening for users and partners</li>
+            </ul>
           </div>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Gestion de l'information humanitaire</h3>
-            <p>Systèmes de collecte, structuration des données, contrôle qualité, reporting, diffusion et gouvernance de l'information.</p>
-          </article>
-          <article class="card">
-            <h3>Analyse de données</h3>
-            <p>Traitement, lecture analytique, synthèse décisionnelle et production d'éléments probants pour l'action.</p>
-          </article>
-          <article class="card">
-            <h3>Dashboards & visualisation</h3>
-            <p>Tableaux de bord modernes, indicateurs, storytelling visuel et suivi opérationnel orienté résultats.</p>
-          </article>
-          <article class="card">
-            <h3>Cartographie & SIG</h3>
-            <p>Cartes thématiques, analyse spatiale, géoréférencement et intégration de données géographiques.</p>
-          </article>
-          <article class="card">
-            <h3>Coordination inter-agences</h3>
-            <p>Harmonisation d'outils, partage d'information, appui aux clusters et mécanismes de coordination.</p>
-          </article>
-          <article class="card">
-            <h3>Genre dans l'action humanitaire</h3>
-            <p>Intégration du genre dans les analyses, les outils, les produits d'information et les processus décisionnels.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="experience">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Expérience</h2>
-            <p>Une trajectoire construite au sein d’agences internationales, de clusters et de mécanismes de coordination.</p>
-          </div>
+      <section class="organisations section" id="organisations">
+        <div class="section-header reveal">
+          <span class="section-kicker">Institutional Footprint</span>
+          <h3>Organisations I have worked with</h3>
+          <p>Experience across UN agencies and humanitarian coordination environments.</p>
         </div>
+        <div class="logos-grid reveal">
+          <img src="assets/logos/unwomen.jpeg" alt="UN Women logo" />
+          <img src="assets/logos/ocha.jpeg" alt="OCHA logo" />
+          <img src="assets/logos/undp.png" alt="UNDP logo" />
+          <img src="assets/logos/wfp.png" alt="WFP logo" />
+          <img src="assets/logos/fao.jpeg" alt="FAO logo" />
+          <img src="assets/logos/unhcr.png" alt="UNHCR logo" />
+          <img src="assets/logos/oim.png" alt="IOM logo" />
+        </div>
+      </section>
+
+      <section class="expertise section" id="expertise">
+        <div class="section-header reveal">
+          <span class="section-kicker">Core Expertise</span>
+          <h3>Six pillars of delivery</h3>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <h4>Information Management Systems</h4>
+            <p>Design and strengthening of IM systems for humanitarian, protection and coordination contexts.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h4>Data Flows & Interoperability</h4>
+            <p>Field-to-national data pathways, harmonisation, aggregation and operational validation circuits.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h4>Sensitive Data Governance</h4>
+            <p>Confidentiality, access control, minimisation, workflow safeguards and do-no-harm practices.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h4>Dashboards & Analytics</h4>
+            <p>Decision-support products including dashboards, maps, infographics, sitreps and evidence notes.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h4>GIS & Spatial Analysis</h4>
+            <p>Service mapping, thematic cartography, geolocation analysis and territorial visualisation.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h4>Capacity Building & Handover</h4>
+            <p>Training, coaching, user support, documentation and sustainability-focused transfer of knowledge.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience">
+        <div class="section-header reveal">
+          <span class="section-kicker">Professional Experience</span>
+          <h3>Selected roles across UN and humanitarian environments</h3>
+        </div>
+
         <div class="timeline">
-          <article class="timeline-item">
-            <span class="meta">2025 – aujourd'hui | Kinshasa, RDC</span>
-            <h3>ONU Femmes — Gender Information Management Officer</h3>
-            <p>Appui à l'intégration du genre dans les systèmes d'information humanitaire à travers des analyses, visualisations et produits d'information conçus pour renforcer une décision plus inclusive.</p>
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">2025 – Present</div>
+            <div class="timeline-body">
+              <h4>UN Women — Gender Information Management Officer</h4>
+              <p>Kinshasa, Democratic Republic of the Congo</p>
+              <ul>
+                <li>Support the integration of gender in humanitarian information systems through analysis, dashboards and decision-support products.</li>
+                <li>Strengthen data accessibility and use for sector leads, coordination groups and humanitarian leadership.</li>
+                <li>Provide technical support on reporting structures, partner inputs and evidence products for advocacy and coordination.</li>
+              </ul>
+            </div>
           </article>
-          <article class="timeline-item">
-            <span class="meta">2024 – 2025 | Addis-Abeba, Éthiopie</span>
-            <h3>OCHA / Bureau de Liaison avec l'Union Africaine — Information Management Officer</h3>
-            <p>Contribution à la production d'analyses et de produits d'information stratégiques à l'échelle continentale sur les dynamiques de crise et les besoins humanitaires en Afrique.</p>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">2024 – 2025</div>
+            <div class="timeline-body">
+              <h4>OCHA African Union Liaison Office — Information Management Officer</h4>
+              <p>Addis Ababa, Ethiopia</p>
+              <ul>
+                <li>Supported strategic data collection, analysis and visualisation on major crises at continental level.</li>
+                <li>Produced maps, graphs, infographics and analytical outputs for strategic engagement and external use.</li>
+                <li>Managed databases and tools ensuring consistency, consolidation and comparability of regional data.</li>
+              </ul>
+            </div>
           </article>
-          <article class="timeline-item">
-            <span class="meta">2022 – 2024 | Dakar, Sénégal</span>
-            <h3>PNUD — Regional Information Management Officer</h3>
-            <p>Appui aux bureaux pays et équipes régionales sur l'analyse des risques, l'alerte précoce, la fragilité et le développement d'outils décisionnels à portée régionale.</p>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">2022 – 2024</div>
+            <div class="timeline-body">
+              <h4>UNDP — Regional Information Management Officer</h4>
+              <p>Dakar, Senegal</p>
+              <ul>
+                <li>Supported crisis risk analysis, early warning and decision-support tools across West and Central Africa.</li>
+                <li>Contributed to the Crisis Risk Dashboard and regional methodologies for risk and fragility analysis.</li>
+                <li>Delivered capacity development to UNDP and UN colleagues in country offices, regional hubs and HQ.</li>
+              </ul>
+            </div>
           </article>
-          <article class="timeline-item">
-            <span class="meta">2022 | Antananarivo, Madagascar</span>
-            <h3>PAM / Food Security Cluster — Information Management Officer</h3>
-            <p>Mise en place d'outils de suivi, de cartographie et d'analyse pour soutenir la coordination du cluster sécurité alimentaire.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="meta">2021 – 2022 | N'Djamena, Tchad</span>
-            <h3>FAO — Information Management & IT Consultant</h3>
-            <p>Structuration, analyse et valorisation des données de projet avec un accent sur la cohérence, la qualité et le reporting.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="meta">2019 – 2021 | Gbadolite, RDC</span>
-            <h3>HCR — Associate Registration & Identity Management Officer</h3>
-            <p>Supervision d'opérations d'enregistrement et de gestion d'identité à grande échelle, avec focus sur la qualité des données et le suivi statistique.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="meta">2018 – 2019 | Port-au-Prince, Haïti</span>
-            <h3>OIM — Shelter Cluster IM & GIS Specialist</h3>
-            <p>Développement de systèmes de suivi, tableaux de bord et analyses cartographiques pour appuyer la coordination et la lecture des besoins dans le secteur abri.</p>
-          </article>
-          <article class="timeline-item">
-            <span class="meta">2016 – 2018 | N'Djamena, Tchad</span>
-            <h3>HCR — Associate Information Management Officer</h3>
-            <p>Production de cartes, bases de données et produits d'information pour appuyer la coordination cluster et l'analyse des besoins.</p>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">2016 – 2022</div>
+            <div class="timeline-body">
+              <h4>Additional roles — WFP, FAO, UNHCR, IOM</h4>
+              <p>Madagascar, Chad, DRC, Haiti</p>
+              <ul>
+                <li>Set up 4W/5W tools, dashboards, partner reporting systems and cluster information products.</li>
+                <li>Managed sensitive registration and identity data in displacement and protection contexts.</li>
+                <li>Produced maps, sitreps, gap analysis, funding analysis and operational briefs for coordination actors.</li>
+              </ul>
+            </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projets">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Projets sélectionnés</h2>
-            <p>Quelques axes de contribution représentatifs de mon approche et de mes réalisations.</p>
+      <section class="projects section" id="projects">
+        <div class="section-header reveal">
+          <span class="section-kicker">Selected Projects</span>
+          <h3>Visual, operational and decision-oriented work</h3>
+          <p>Projects are presented as practical systems rather than design showcases.</p>
+        </div>
+
+        <div class="project-showcase">
+          <article class="project-card featured reveal">
+            <div class="project-content">
+              <div class="project-tag">Risk Analysis</div>
+              <h4>Crisis Risk Dashboard</h4>
+              <p>
+                Regional analytical platform designed to strengthen anticipation of risk and improve
+                understanding of fragility dynamics across West and Central Africa.
+              </p>
+              <ul>
+                <li><strong>Role:</strong> Data structuring, contextual analysis, visualisation and decision-support logic.</li>
+                <li><strong>Deliverables:</strong> Dashboard, indicator logic, analytical products and visuals.</li>
+                <li><strong>Value added:</strong> Improved readability of risk dynamics for regional teams and country offices.</li>
+              </ul>
+            </div>
+            <div class="project-visual gradient-risk">
+              <div class="mockup">
+                <span class="mockup-badge">Dashboard</span>
+                <div class="mockup-lines"></div>
+              </div>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-content">
+                <div class="project-tag">Coordination</div>
+                <h4>Food Security Cluster IM Setup</h4>
+                <p>End-to-end IM setup including 5W, response monitoring, sitreps, maps and partner reporting.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-content">
+                <div class="project-tag">Protection Data</div>
+                <h4>Registration & Identity Management</h4>
+                <p>Sensitive data workflows for refugee registration, quality assurance, SOPs and system administration.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-content">
+                <div class="project-tag">Continental Analysis</div>
+                <h4>Africa Humanitarian Overview Support</h4>
+                <p>Continental synthesis, mapping and visual products supporting strategic humanitarian understanding.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-content">
+                <div class="project-tag">GIS</div>
+                <h4>Shelter Cluster 4W & Spatial Products</h4>
+                <p>Dynamic maps, dashboards, operational tracking and damage assessment support in Haiti.</p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="grid-3">
-          <article class="card project-card">
-            <span class="project-badge">Dashboards</span>
-            <h3>Dashboards humanitaires</h3>
-            <p>Conception de tableaux de bord interactifs pour visualiser les besoins, suivre les interventions et appuyer les décisions.</p>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="section-header reveal">
+          <span class="section-kicker">Technical Skills</span>
+          <h3>Tools and platforms</h3>
+        </div>
+        <div class="skills-grid">
+          <article class="skills-card reveal">
+            <h4>Data & Information Management</h4>
+            <p>Python, SQL, Excel, Power Query, KoboToolbox, ODK, Survey123, validation, harmonisation, automation.</p>
           </article>
-          <article class="card project-card">
-            <span class="project-badge">Coordination</span>
-            <h3>Systèmes 4W / 5W</h3>
-            <p>Développement d'outils de suivi pour renforcer la coordination, identifier les doublons et mettre en évidence les gaps.</p>
+          <article class="skills-card reveal">
+            <h4>Visualisation & BI</h4>
+            <p>Power BI, Tableau, dashboards, infographics, reporting, data storytelling, analytical visuals.</p>
           </article>
-          <article class="card project-card">
-            <span class="project-badge">SIG</span>
-            <h3>Cartographie analytique</h3>
-            <p>Production de cartes thématiques et analyses spatiales destinées au ciblage, à la couverture et à la priorisation.</p>
+          <article class="skills-card reveal">
+            <h4>GIS & Mapping</h4>
+            <p>ArcGIS, QGIS, spatial analysis, thematic mapping, georeferencing, service mapping.</p>
           </article>
-          <article class="card project-card">
-            <span class="project-badge">Genre</span>
-            <h3>Produits sensibles au genre</h3>
-            <p>Développement de supports analytiques visant à mieux intégrer les dimensions genre et inclusion dans l'action humanitaire.</p>
-          </article>
-          <article class="card project-card">
-            <span class="project-badge">Protection</span>
-            <h3>Données d'enregistrement</h3>
-            <p>Renforcement d'outils et de systèmes de gestion de données sensibles dans des contextes de déplacement forcé et de protection.</p>
-          </article>
-          <article class="card project-card">
-            <span class="project-badge">Stratégie</span>
-            <h3>Produits d'aide à la décision</h3>
-            <p>Synthèses, visualisations et notes analytiques destinées à soutenir une lecture plus claire des priorités et des risques.</p>
+          <article class="skills-card reveal">
+            <h4>Humanitarian Platforms</h4>
+            <p>ReliefWeb, HDX, Humanitarian Response, FTS, GeoSmart, cluster coordination tools.</p>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="competences">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Compétences</h2>
-            <p>Un socle technique articulé autour de l’analyse, de la visualisation, des SIG et de l’automatisation.</p>
+      <section class="education section" id="education">
+        <div class="section-header reveal">
+          <span class="section-kicker">Education & Training</span>
+          <h3>Academic foundation and selected certifications</h3>
+        </div>
+        <div class="content-grid">
+          <div class="content-card reveal">
+            <h4>Education</h4>
+            <ul class="clean-list">
+              <li>Executive Master of Engineering Data, Artificial Intelligence</li>
+              <li>Master Certificate of Humanitarian Shelter Coordination</li>
+              <li>Bachelor’s Degree in Computer Science Applied to Management</li>
+            </ul>
+          </div>
+          <div class="content-card reveal">
+            <h4>Selected Professional Training</h4>
+            <ul class="clean-list">
+              <li>Humanitarian Data Management and Data Protection</li>
+              <li>Humanitarian Information Management and Communication</li>
+              <li>Fundamentals of Identity Management and Registration</li>
+              <li>KoboToolbox Training of Trainers</li>
+              <li>GIS ArcGIS & QGIS</li>
+              <li>HEAT</li>
+            </ul>
           </div>
         </div>
-        <div class="grid-2">
-          <article class="card">
-            <h3>Données & analyse</h3>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Excel avancé</span>
-              <span class="tag">Contrôle qualité</span>
-              <span class="tag">Analyse statistique</span>
-              <span class="tag">Structuration de bases</span>
-            </div>
-          </article>
-          <article class="card">
-            <h3>BI & visualisation</h3>
-            <div class="tags">
-              <span class="tag">Power BI</span>
-              <span class="tag">Tableau</span>
-              <span class="tag">Dashboards</span>
-              <span class="tag">Data storytelling</span>
-              <span class="tag">Reporting</span>
-            </div>
-          </article>
-          <article class="card">
-            <h3>SIG & cartographie</h3>
-            <div class="tags">
-              <span class="tag">ArcGIS</span>
-              <span class="tag">QGIS</span>
-              <span class="tag">Analyse spatiale</span>
-              <span class="tag">Cartes thématiques</span>
-              <span class="tag">Géoréférencement</span>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Collecte & coordination</h3>
-            <div class="tags">
-              <span class="tag">KoboToolbox</span>
-              <span class="tag">ODK</span>
-              <span class="tag">4W / 5W</span>
-              <span class="tag">Clusters</span>
-              <span class="tag">Renforcement des capacités</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="formation">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Formation</h2>
-            <p>Un parcours combinant informatique appliquée, ingénierie des données et spécialisation humanitaire.</p>
+      <section class="contact section" id="contact">
+        <div class="contact-box reveal">
+          <span class="section-kicker">Contact</span>
+          <h3>Available for international assignments</h3>
+          <p>
+            Open to opportunities in information management, humanitarian data systems,
+            analytical support, inter-agency coordination and surge deployments.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:reoutar@gmail.com">reoutar@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+243971539376">+243 97 153 93 76</a>
+            <span>•</span>
+            <a href="https://dataportal.github.io/PORTEFOLIO/" target="_blank" rel="noreferrer">Portfolio</a>
           </div>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Executive Master en ingénierie des données</h3>
-            <p>Option Intelligence Artificielle — ISAE-ISM Paris</p>
-          </article>
-          <article class="card">
-            <h3>Master Certificate of Humanitarian Shelter Coordinator</h3>
-            <p>IFRC & Oxford University</p>
-          </article>
-          <article class="card">
-            <h3>Licence en informatique appliquée à la gestion</h3>
-            <p>Université de Moundou</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Contact</h2>
-            <p>Disponible pour des missions, collaborations ou projets liés à la gestion de l'information, aux dashboards, à la cartographie et à l'analyse humanitaire.</p>
-          </div>
-        </div>
-        <div class="contact-box">
-          <div class="contact-panel">
-            <h3>Entrons en contact</h3>
-            <p>
-              Remplace simplement les informations ci-dessous par tes coordonnées professionnelles, tes liens publics et ton CV PDF.
-            </p>
-            <div class="contact-list">
-              <div class="contact-item"><strong>Email</strong><br />ton.email@exemple.com</div>
-              <div class="contact-item"><strong>Téléphone</strong><br />+250 XX XXX XXXX</div>
-              <div class="contact-item"><strong>LinkedIn</strong><br />linkedin.com/in/tonprofil</div>
-              <div class="contact-item"><strong>GitHub</strong><br />github.com/tonprofil</div>
-            </div>
-          </div>
-          <article class="card">
-            <h3>Déploiement GitHub Pages</h3>
-            <p>
-              Place <strong>index.html</strong>, <strong>style.css</strong> et <strong>script.js</strong> à la racine du dépôt. Ajoute ensuite ton CV PDF et, si besoin, un dossier <strong>assets</strong> pour les images.
-            </p>
-            <p>
-              Active GitHub Pages dans les paramètres du dépôt pour publier le site. Cette structure est prête pour évoluer ensuite vers une version plus avancée.
-            </p>
-            <div class="tags">
-              <span class="tag">index.html</span>
-              <span class="tag">style.css</span>
-              <span class="tag">script.js</span>
-              <span class="tag">GitHub Pages</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-box">
-      <div>Hypolite REOUTAR MBAILASSEM — Gestion de l'information • Analyse de données • SIG • Dashboards</div>
-      <div>Transformer des données complexes en outils clairs pour mieux décider.</div>
-    </div>
-  </footer>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
